@@ -13,7 +13,7 @@
 ## فهرست مطالب (Table of Contents)
 - [چرا این کیت توسعه داده شد؟ (Motivation)](#چرا-این-کیت-توسعه-داده-شد-motivation)
 - [ویژگی‌های کلیدی (Key Features)](#ویژگیهای-کلیدی-key-features)
-- [فهرست اسکیل‌های ۸ گانه (The 9 Battle-Tested Skills)](#فهرست-اسکیلهای-۸-گانه-the-8-battle-tested-skills)
+- [فهرست اسکیل‌های ۹ گانه (The 9 Battle-Tested Skills)](#فهرست-اسکیلهای-۸-گانه-the-8-battle-tested-skills)
 - [راهنمای نصب سریع (Installation)](#راهنمای-نصب-سریع-installation)
 - [نحوه کارکرد فنی (Architecture)](#نحوه-کارکرد-فنی-architecture)
 - [مشارکت و لایسنس (License)](#مشارکت-و-لایسنس-license)
@@ -43,7 +43,7 @@
 
 ---
 
-## فهرست اسکیل‌های ۸ گانه (The 9 Battle-Tested Skills)
+## فهرست اسکیل‌های ۹ گانه (The 9 Battle-Tested Skills)
 
 | اسکیل | شناسه فنی | معضل حل‌شده |
 | :--- | :--- | :--- |
