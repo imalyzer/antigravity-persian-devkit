@@ -5,7 +5,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Cross--Platform-lightgrey.svg)]()
 [![Persian Support](https://img.shields.io/badge/Persian%2FArabic-RTL%20Supported-success.svg)]()
 
-> **کیت ابزار مهندسی، قوانین پاسخ‌دهی بدون تعارف، و ۸ اسکیل تخصصی حل چالش‌های زبان فارسی و ویندوز برای Google Antigravity**  
+> **کیت ابزار مهندسی، قوانین پاسخ‌دهی بدون تعارف، و ۹ اسکیل تخصصی حل چالش‌های زبان فارسی و ویندوز برای Google Antigravity**  
 > *A production-grade developer kit for Google Antigravity featuring zero-preamble engineering response policies, RTL console formatting, zero-mojibake Office VBA macros, and Windows development standards.*
 
 ---
@@ -13,7 +13,7 @@
 ## فهرست مطالب (Table of Contents)
 - [چرا این کیت توسعه داده شد؟ (Motivation)](#چرا-این-کیت-توسعه-داده-شد-motivation)
 - [ویژگی‌های کلیدی (Key Features)](#ویژگیهای-کلیدی-key-features)
-- [فهرست اسکیل‌های ۸ گانه (The 8 Battle-Tested Skills)](#فهرست-اسکیلهای-۸-گانه-the-8-battle-tested-skills)
+- [فهرست اسکیل‌های ۸ گانه (The 9 Battle-Tested Skills)](#فهرست-اسکیلهای-۸-گانه-the-8-battle-tested-skills)
 - [راهنمای نصب سریع (Installation)](#راهنمای-نصب-سریع-installation)
 - [نحوه کارکرد فنی (Architecture)](#نحوه-کارکرد-فنی-architecture)
 - [مشارکت و لایسنس (License)](#مشارکت-و-لایسنس-license)
@@ -43,7 +43,7 @@
 
 ---
 
-## فهرست اسکیل‌های ۸ گانه (The 8 Battle-Tested Skills)
+## فهرست اسکیل‌های ۸ گانه (The 9 Battle-Tested Skills)
 
 | اسکیل | شناسه فنی | معضل حل‌شده |
 | :--- | :--- | :--- |
@@ -55,6 +55,7 @@
 | **۶. عیب‌یابی ارورهای ناگهانی** | `skill-06-sudden-app-error-troubleshooting` | پروتکل ۷ مرحله‌ای ریشه‌یابی و ممنوعیت زدن حدس‌های فرضی و کلیشه‌ای (آنتی‌ویروس/دیفندر/وان‌درایو). |
 | **۷. توسعه پلاگین ابسیدین با CM6** | `skill-07-obsidian-and-cm6-development` | رعایت معماری رندر مجازی CodeMirror 6 و جلوگیری از شکستن رندر با تزریق دستی تگ‌های HTML. |
 | **۸. تنظیمات مدل‌های محلی و پراکسی** | `skill-08-local-llm-proxy-and-translation` | پارامترهای بهینه Gemma در LM Studio (`Repeat Penalty=1.0` و `Min P=0.0`)، افزونه‌های کیوتنسلیت و پایپ‌لاین STT فارسی. |
+| **۹. استخراج داده برنامه‌های الکترون** | `skill-09-chromium-electron-data-extraction` | **تله فشرده‌سازی باینری V8**: استخراج بدون خطا از دیتابیس IndexedDB و LevelDB برنامه‌های کرومیوم/الکترون (Claude, VS Code, Discord)، رد داده‌های تصادفی باینری و محافظت در برابر هنگ کردن اسکنر. |
 
 ---
 
@@ -67,7 +68,7 @@
    ```
 2. وارد پوشه شده و روی فایل **`install.bat`** دابل‌کلیک کنید.  
    *(اسکریپت به صورت خودکار پوشه پلاگین را در `~/.gemini/config/plugins/` مستقر و در تنظیمات آنتی‌گرویتی ثبت می‌کند).*
-3. برنامه Antigravity را باز کنید؛ تمام ۸ اسکیل و قوانین فعال هستند!
+3. برنامه Antigravity را باز کنید؛ تمام ۹ اسکیل و قوانین فعال هستند!
 
 ### روش ۲: نصب با پاورشل (PowerShell)
 ```powershell
