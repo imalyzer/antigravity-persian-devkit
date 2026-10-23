@@ -105,6 +105,13 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1
 
 ---
 
+## ارتباط و پرسش‌ها (Questions & Support)
+برای مطرح کردن سوالات، ایده‌ها، گزارش خطا یا ارتباط، می‌توانید از بخش‌های زیر در همین مخزن استفاده کنید:
+- 💬 **[گفت‌وگوها (Discussions)](https://github.com/imalyzer/antigravity-persian-devkit/discussions)** برای سوالات عمومی و تبادل نظر
+- 🐛 **[گزارش خطا (Issues)](https://github.com/imalyzer/antigravity-persian-devkit/issues)** برای گزارش باگ یا ارتقای اسکیل‌ها
+
+---
+
 ## لایسنس (License)
 این پروژه تحت لایسنس **MIT** به صورت کاملاً آزاد و متن‌باز برای تمام توسعه‌دهندگان ایرانی منتشر شده است.
 
