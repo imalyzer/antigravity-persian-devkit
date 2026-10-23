@@ -1,0 +1,22 @@
+{
+  "name": "antigravity-persian-devkit",
+  "displayName": "Antigravity Persian DevKit",
+  "version": "1.0.0",
+  "description": "Comprehensive Persian developer kit for Google Antigravity: RTL terminal display, VBA Persian macros, Windows batch encoding standards, CoALA multi-agent orchestration, and zero-preamble response policy.",
+  "suggestedPrompts": [
+    "راهنمای نمایش صحیح متن فارسی در ترمینال ویندوز با textwrap و bidi",
+    "ساخت ماکرو VBA فارسی در اکسل بدون علامت‌سوال شدن حروف",
+    "بررسی معماری فنی پروژه بر اساس فیلتر لجنزار متخصصان"
+  ],
+  "keywords": [
+    "persian",
+    "farsi",
+    "antigravity",
+    "gemini",
+    "rtl",
+    "vba",
+    "windows-batch",
+    "coala",
+    "prompt-engineering"
+  ]
+}
