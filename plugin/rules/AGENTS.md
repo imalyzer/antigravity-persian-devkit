@@ -38,7 +38,11 @@ Before processing, reasoning about, or responding to ANY user request, you **MUS
     ├── SKILL_06_Sudden_App_Error_Troubleshooting.md     # 7-step root-cause diagnostic protocol for sudden software errors
     ├── SKILL_07_Obsidian_and_CM6_Development.md         # Obsidian themes/plugins, CodeMirror 6 Decoration API, idempotent block IDs
     ├── SKILL_08_Local_LLM_Proxy_and_Translation.md      # LM Studio tuning, offline QTranslate OCR pipeline, LiteLLM/9Router & STT
-    └── SKILL_09_Chromium_Electron_Data_Extraction.md     # Electron/Chromium storage, V8 Structured Clone deserialization & gotchas
+    ├── SKILL_09_Chromium_Electron_Data_Extraction.md     # Electron/Chromium storage, V8 Structured Clone deserialization & gotchas
+    ├── SKILL_10_DDC_CI_Display_Automation_and_Power_Safety.md # DDC/CI display control, I2C bus timing, WM_ENDSESSION & pre-login rescue task
+    ├── SKILL_11_Windows_Desktop_Glassmorphism_and_Shell.md    # Windows Acrylic/Mica translucency vs browser swap chains & frameless shell
+    ├── SKILL_12_Desktop_App_UI_UX_and_State_Discipline.md     # Desktop UI/UX ergonomics, RTL vs LTR controls, click-to-record & strict manual persistence
+    └── SKILL_13_Electron_Context_Isolation_and_Lexical_BiDi.md # Electron preload context isolation, Meta Lexical multi-paragraph BiDi, Shift+Enter hook & CDP
 ```
 
 ### 2.2. Linear Routing Graph (Task Intent -> Target File Address)
@@ -77,6 +81,18 @@ Before processing, reasoning about, or responding to ANY user request, you **MUS
    │
    ├─► [Extracting Accounts/Storage from Electron/Chromium Apps (IndexedDB, LevelDB)]
    │      └──► APPLY SKILL:    02_Skills\SKILL_09_Chromium_Electron_Data_Extraction.md
+   │
+   ├─► [Controlling Monitors via DDC/CI, Display Power States, or Waking Displays]
+   │      └──► APPLY SKILL:    02_Skills\SKILL_10_DDC_CI_Display_Automation_and_Power_Safety.md
+   │
+   ├─► [Building Windows Frosted Glass / Acrylic / Mica Desktop UI or Frameless Shells]
+   │      └──► APPLY SKILL:    02_Skills\SKILL_11_Windows_Desktop_Glassmorphism_and_Shell.md
+   │
+   ├─► [Designing Desktop UI/UX, RTL vs LTR Technical Data, Hotkey Capsules, or State Persistence]
+   │      └──► APPLY SKILL:    02_Skills\SKILL_12_Desktop_App_UI_UX_and_State_Discipline.md
+   │
+   ├─► [Patching Electron Preload Context Isolation, Meta Lexical BiDi, Shift+Enter, or CDP Debugging]
+   │      └──► APPLY SKILL:    02_Skills\SKILL_13_Electron_Context_Isolation_and_Lexical_BiDi.md
    │
    └─► [Command: "Update Signboard, Data, and Backup Files"]
           └──► EXECUTE:        01_Signboard_and_Policies\SYNC_AND_BACKUP_PROMPT.md
@@ -138,12 +154,16 @@ Use this table to route tasks directly to the appropriate Skill file in `<Antigr
 | **SKILL-01** | Guiding a software project, evaluating a technical approach, or building a standalone app/tool | `SKILL_01_Technical_Project_and_Architecture.md` | **Specialist Swamp Filter** (90% simple solution rule + live API verification like `IShellLink::Resolve()`), **Mechanism vs. Goal**, and the **5-Domain Engineering Loop** (Strategy, Design, Engineering, Quality/Security, Delivery). |
 | **SKILL-02** | Maturing a raw project idea, estimating context/token budgets, or orchestrating multi-model execution | `SKILL_02_Multi_Agent_Orchestration_CoALA.md` | **CoALA 3-Stage Pipeline**: Model 1 (Architect per-dimension maturation) & Model 2 (Orchestrator interface stability test, parallel vs. sequential split, and **4-Part Executor Contracts**). |
 | **SKILL-03** | Creating or editing Windows Batch (`.bat`, `.cmd`) or PowerShell (`.ps1`) scripts | `SKILL_03_Windows_Batch_and_CRLF_Encoding.md` | **Mandatory `CRLF` (`\r\n`)**, **UTF-8 without BOM**, `@echo off` + `chcp 65001 >nul` + `set "PYTHONUTF8=1"`, escaped `^(` `^)` in blocks, `!var!` delayed expansion, and disk byte verification before delivery. |
-| **SKILL-04** | Displaying Persian/Arabic (RTL) text or progress logs in a Windows Terminal / Console UI | `SKILL_04_Windows_Terminal_Persian_RTL.md` | **Pre-wrap with `textwrap.wrap(width=70)` BEFORE `arabic_reshaper.reshape()` and `bidi.algorithm.get_display()`**. Never trust `shutil.get_terminal_size()` on Windows consoles (returns buffer width). |
+| **SKILL-04** | Displaying Persian/Arabic (RTL) text or progress logs in a Windows Terminal / Console UI | `SKILL_04_Windows_Terminal_Persian_RTL.md` | **Pre-wrap with `textwrap.wrap(width=70)` BEFORE `arabic_reshaper.reshape()` and `bidi.algorithm.get_display()`** (Python) OR use **Zero-Dependency Standalone Helper** (Node/JS) with Unicode Presentation Forms-B mapping for mixed CLI lines, prefix preservation (`[*]`), and LTR/bracket isolation. Never trust `shutil.get_terminal_size()`. |
 | **SKILL-05** | Writing, editing, or debugging Microsoft Office VBA Macros (Word, Excel, Access) with Persian text | `SKILL_05_VBA_Persian_Macro_Guidelines.md` | **Zero raw Persian in `.bas`/VBE** (use `ChrW(&Hxxxx)` or `U(hex)` helper; ASCII comments only), Word RTL via `ReadingOrder = wdReadingOrderRtl` (never `.Bidi`), Persian font via `Font.NameBi` (never `NameFarEast` / Error 5844), `NormalizeDigits` for `InputBox`. |
 | **SKILL-06** | Diagnosing a sudden, unprecedented error message, stacktrace, or screenshot in a working app | `SKILL_06_Sudden_App_Error_Troubleshooting.md` | **7-Step Diagnostic Protocol**: Turn-1 deep web search -> Ban generic OS guesses (Antivirus/OneDrive/DevMode) -> Inspect visible UI switches/limits against docs -> Rank fixes simplest-to-hardest -> Deep forensics only if simple fixes fail. |
 | **SKILL-07** | Building or debugging Obsidian themes, CSS snippets, JS Engine scripts, or TypeScript plugins | `SKILL_07_Obsidian_and_CM6_Development.md` | Search existing plugins first; **CodeMirror 6 virtualized DOM rule** (never inject raw `<mark>`/HTML; use native CM6 `Decoration`/`StateField` API); 4-layer CSS hierarchy; idempotent `^block-id` reuse; Phase 0 `npm run build` check. |
 | **SKILL-08** | Tuning local LLMs (LM Studio/Gemma), QTranslate offline OCR/translation, LiteLLM/9Router, or Persian STT | `SKILL_08_Local_LLM_Proxy_and_Translation.md` | Keep Gemma `Repeat Penalty=1.0` & `Min P=0.0`; enumerate technical terms in Thinking mode; Kotlin/Gradle JDK 17 + explicit `META-INF/services`; minimal proxy hops; `faster-whisper` + `Virastar/Parsivar` + `Piper` for Persian STT/TTS. |
 | **SKILL-09** | Extracting accounts, auth tokens, or session data from Electron or Chromium apps (Claude, VS Code, Slack, Discord) | `SKILL_09_Chromium_Electron_Data_Extraction.md` | **V8 Structured Clone Gotcha**: Key-targeted search (`b'email_address"'`) + compressed domain resolution (`@g...com` -> `@gmail.com`); strict TLD/SLD length validation (rejects `g2@K.F`); mandatory exclusion of `Cache` and `Code Cache`. |
+| **SKILL-10** | Automating physical monitors via DDC/CI, brightness/contrast control, preventing video sleep, or handling power-cut screen lockouts | `SKILL_10_DDC_CI_Display_Automation_and_Power_Safety.md` | **DDC/CI & I2C Timing Standard**: Enforce `WakeMinWaitSec` debounce (3–12s) to prevent I2C bus lockup; 3-pulse wake burst; `WM_QUERYENDSESSION`/`WM_ENDSESSION` hook; pre-login Scheduled Task (`At startup` in Session 0) for power outage rescue; WASAPI Core Audio peak meter for robust video detection. |
+| **SKILL-11** | Creating frosted glass (glassmorphism), Windows Acrylic/Mica UIs, or wrapping web apps in frameless desktop shells | `SKILL_11_Windows_Desktop_Glassmorphism_and_Shell.md` | **Browser Opaque Swap Chain Trap**: Browser `--app` mode uses opaque swap chains and cannot blur desktop wallpaper; use native shell (Electron/WebView2) with `transparent: true` + `backgroundMaterial: 'acrylic'`; implement custom titlebar with `-webkit-app-region: drag` and `-webkit-app-region: no-drag` on interactive children; clean batch process orchestration. |
+| **SKILL-12** | Designing desktop UI/UX, handling Persian RTL vs LTR technical data, hotkey capsules, sliders, or persistence | `SKILL_12_Desktop_App_UI_UX_and_State_Discipline.md` | **Strict Manual Persistence Rule** (zero rogue auto-save; single commit point via header save), **Semantic RTL vs LTR Control Isolation** (inline row stability), **Click-to-Record Capsule Ergonomics** (auto-dismiss actions), **Dynamic Height Adaptivity** (`fit-content-height`), **Wheel Scrubbing & Dynamic Track Fill** (`--fill-pct`). |
+| **SKILL-13** | Patching Electron desktop apps, bridging `preload.js` context isolation, fixing Lexical/contenteditable BiDi, spacebar caret jumps, or Shift+Enter multi-paragraph splitting | `SKILL_13_Electron_Context_Isolation_and_Lexical_BiDi.md` | **Preload Context Isolation Barrier** (DOM elements in preload cannot access main-world JS properties like `el.__lexicalEditor`; must inject into main world via `webFrame.executeJavaScript`), **Lexical Multi-Paragraph Architecture** (intercept `INSERT_LINE_BREAK_COMMAND` at Priority 4 to dispatch `INSERT_PARAGRAPH_COMMAND`; eliminates spacebar caret jumping and forces independent line-by-line directionality), **Multiline Paste Splitting** (`PASTE_COMMAND`), **In-Memory ASAR Cache Trap** (Electron memory-maps headers; overwriting on-disk ASAR requires restart or live CDP injection), **Dynamic In-Place Patcher** (extract live ASAR, merge patches, repack without feature downgrade). |
 
 ---
 

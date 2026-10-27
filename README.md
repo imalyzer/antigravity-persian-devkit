@@ -5,7 +5,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Cross--Platform-lightgrey.svg)]()
 [![Persian Support](https://img.shields.io/badge/Persian%2FArabic-RTL%20Supported-success.svg)]()
 
-> **کیت ابزار مهندسی، قوانین پاسخ‌دهی بدون تعارف، و ۹ اسکیل تخصصی حل چالش‌های زبان فارسی و ویندوز برای Google Antigravity**  
+> **کیت ابزار مهندسی، قوانین پاسخ‌دهی بدون تعارف، و ۱۳ اسکیل تخصصی حل چالش‌های زبان فارسی و ویندوز برای Google Antigravity**  
 > *A production-grade developer kit for Google Antigravity featuring zero-preamble engineering response policies, RTL console formatting, zero-mojibake Office VBA macros, and Windows development standards.*
 
 ---
@@ -13,7 +13,7 @@
 ## فهرست مطالب (Table of Contents)
 - [چرا این کیت توسعه داده شد؟ (Motivation)](#چرا-این-کیت-توسعه-داده-شد-motivation)
 - [ویژگی‌های کلیدی (Key Features)](#ویژگیهای-کلیدی-key-features)
-- [فهرست اسکیل‌های ۹ گانه (The 9 Battle-Tested Skills)](#فهرست-اسکیلهای-۸-گانه-the-8-battle-tested-skills)
+- [فهرست اسکیل‌های ۱۳ گانه (The 13 Battle-Tested Skills)](#فهرست-اسکیلهای-۱۳-گانه-the-13-battle-tested-skills)
 - [راهنمای نصب سریع (Installation)](#راهنمای-نصب-سریع-installation)
 - [نحوه کارکرد فنی (Architecture)](#نحوه-کارکرد-فنی-architecture)
 - [مشارکت و لایسنس (License)](#مشارکت-و-لایسنس-license)
@@ -43,7 +43,7 @@
 
 ---
 
-## فهرست اسکیل‌های ۹ گانه (The 9 Battle-Tested Skills)
+## فهرست اسکیل‌های ۱۳ گانه (The 13 Battle-Tested Skills)
 
 | اسکیل | شناسه فنی | معضل حل‌شده |
 | :--- | :--- | :--- |
@@ -56,6 +56,10 @@
 | **۷. توسعه پلاگین ابسیدین با CM6** | `skill-07-obsidian-and-cm6-development` | رعایت معماری رندر مجازی CodeMirror 6 و جلوگیری از شکستن رندر با تزریق دستی تگ‌های HTML. |
 | **۸. تنظیمات مدل‌های محلی و پراکسی** | `skill-08-local-llm-proxy-and-translation` | پارامترهای بهینه Gemma در LM Studio (`Repeat Penalty=1.0` و `Min P=0.0`)، افزونه‌های کیوتنسلیت و پایپ‌لاین STT فارسی. |
 | **۹. استخراج داده برنامه‌های الکترون** | `skill-09-chromium-electron-data-extraction` | **تله فشرده‌سازی باینری V8**: استخراج بدون خطا از دیتابیس IndexedDB و LevelDB برنامه‌های کرومیوم/الکترون (Claude, VS Code, Discord)، رد داده‌های تصادفی باینری و محافظت در برابر هنگ کردن اسکنر. |
+| **۱۰. اتوماسیون سخت‌افزاری مانیتور با DDC/CI** | `skill-10-ddc-ci-display-automation-and-power-safety` | **زمان‌بندی باس I2C و پایداری بوت**: رفع فریز باس مانیتور با دیبانس بیداری (`WakeMinWaitSec`)، شوک ۳ مرحله‌ای و تسک سشن صفر (`At startup`) و هوک `WM_ENDSESSION` برای جلوگیری از سیاه ماندن نمایشگر بعد از قطع ناگهانی برق یا ری‌استارت و پایش بدون ادمین ویدیو با WASAPI. |
+| **۱۱. شیشه‌ای کردن پنجره‌های ویندوز (Acrylic/Mica)** | `skill-11-windows-desktop-glassmorphism-and-shell` | **تله پنجره‌های غیرشفاف مرورگر**: رفع ناتوانی مرورگر در بلور کردن پس‌زمینه دسکتاپ با شل نیتیو بدون فریم (Electron/WebView2)، ترنسپرنسی واقعی، تایتل‌بار درگ‌نیبل منهای المان‌های تعاملی و هماهنگی پروسه‌ها. |
+| **۱۲. اصول ارگونومی UI/UX و پایداری وضعیت** | `skill-12-desktop-app-ui-ux-and-state-discipline` | **قانون تعهد دستی به دیسک (Zero Auto-Save)**: جلوگیری از بازنویسی ناخواسته کانفیگ، تفکیک دایرکشن RTL فارسی از داده‌های فنی LTR در ردیف‌ها، کپسول‌های ثبت کلید میانبر و ارتفاع داینامیک پنجره. |
+| **۱۳. راست‌چین هوشمند و Context Isolation الکترون** | `skill-13-electron-context-isolation-and-lexical-bidi` | **عبور از سد Preload و تفکیک خط‌به‌خط ادیتور Lexical**: دسترسی به آبجکت ادیتور از طریق تزریق به Main World، رهگیری `INSERT_LINE_BREAK_COMMAND` برای ایجاد پاراگراف مجزا و حذف باگ پرش مکان‌نما در اسپیس و ادغام درون پکیج ASAR. |
 
 ---
 
@@ -68,7 +72,7 @@
    ```
 2. وارد پوشه شده و روی فایل **`install.bat`** دابل‌کلیک کنید.  
    *(اسکریپت به صورت خودکار پوشه پلاگین را در `~/.gemini/config/plugins/` مستقر و در تنظیمات آنتی‌گرویتی ثبت می‌کند).*
-3. برنامه Antigravity را باز کنید؛ تمام ۹ اسکیل و قوانین فعال هستند!
+3. برنامه Antigravity را باز کنید؛ تمام ۱۳ اسکیل و قوانین فعال هستند!
 
 ### روش ۲: نصب با پاورشل (PowerShell)
 ```powershell

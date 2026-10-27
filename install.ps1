@@ -10,7 +10,7 @@ Write-Host ""
 
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $PluginSrc = Join-Path $ScriptDir "plugin"
-$TargetDir = Join-Path $HOME ".gemini\config\pluginsntigravity-persian-devkit"
+$TargetDir = Join-Path $HOME ".gemini\config\plugins\antigravity-persian-devkit"
 $ConfigJson = Join-Path $HOME ".gemini\config\config.json"
 
 if (-not (Test-Path (Join-Path $PluginSrc "plugin.json"))) {
