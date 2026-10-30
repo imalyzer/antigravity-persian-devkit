@@ -4,6 +4,7 @@
 [![Antigravity](https://img.shields.io/badge/Google-Antigravity%20Plugin-4285F4.svg)](https://github.com/imalyzer/antigravity-persian-devkit)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Cross--Platform-lightgrey.svg)]()
 [![Persian Support](https://img.shields.io/badge/Persian%2FArabic-RTL%20Supported-success.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.2.1-orange.svg)]()
 
 > **کیت ابزار مهندسی، قوانین پاسخ‌دهی بدون تعارف، و ۱۵ اسکیل تخصصی حل چالش‌های زبان فارسی و ویندوز برای Google Antigravity**  
 > *A production-grade developer kit for Google Antigravity featuring zero-preamble engineering response policies, RTL console formatting, zero-mojibake Office VBA macros, and Windows development standards.*
@@ -14,6 +15,7 @@
 - [چرا این کیت توسعه داده شد؟ (Motivation)](#چرا-این-کیت-توسعه-داده-شد-motivation)
 - [ویژگی‌های کلیدی (Key Features)](#ویژگیهای-کلیدی-key-features)
 - [فهرست اسکیل‌های ۱۵ گانه (The 15 Battle-Tested Skills)](#فهرست-اسکیلهای-۱۵-گانه-the-15-battle-tested-skills)
+- [ممیزی خودکار سلامت ورک‌اسپیس (Audit Tool)](#ممیزی-خودکار-سلامت-ورکاسپیس-audit-tool)
 - [راهنمای نصب سریع (Installation)](#راهنمای-نصب-سریع-installation)
 - [نحوه کارکرد فنی (Architecture)](#نحوه-کارکرد-فنی-architecture)
 - [مشارکت و لایسنس (License)](#مشارکت-و-لایسنس-license)
@@ -43,6 +45,10 @@
 4. **تضمین سلامت اسکریپت‌های ویندوز در دانلود ZIP (`.gitattributes`):**  
    تمام اسکریپت‌ها با استاندارد خطوط `CRLF` و بدون BOM ذخیره شده‌اند و با تعریف `.gitattributes` در ریشه مخزن، دانلود از طریق «Download ZIP» گیت‌هاب نیز باعث تغییر خطوط به LF و کرش cmd.exe نخواهد شد.
 
+
+5. **معماری انکر ریشه مقاوم و ممیزی زیر ۲ ثانیه (SKILL-15):**  
+   مجهز به انکر پویای ریشه (`.project-root`)، سرایند متمرکز مسیرها (`# @PATH-REGISTRY`) و ابزار ممیزی خودکار `audit.bat` جهت تضمین سلامت ۱۰۰٪ باینری، انکودینگ CRLF و نبود BOM در کمتر از ۵۰۰ میلی‌ثانیه.
+
 ---
 
 ## فهرست اسکیل‌های ۱۵ گانه (The 15 Battle-Tested Skills)
@@ -64,6 +70,24 @@
 | **۱۳. راست‌چین هوشمند و Context Isolation الکترون** | `skill-13-electron-context-isolation-and-lexical-bidi` | **عبور از سد Preload و تفکیک خط‌به‌خط ادیتور Lexical**: دسترسی به آبجکت ادیتور از طریق تزریق به Main World، رهگیری `INSERT_LINE_BREAK_COMMAND` برای ایجاد پاراگراف مجزا و حذف باگ پرش مکان‌نما در اسپیس و ادغام درون پکیج ASAR. |
 | **۱۴. گیت‌وی VPN مبتنی بر ماشین مجازی** | `skill-14-vm-gateway-vpn-and-leak-prevention` | **کیل‌سوئیچ قطعی و بستن نشت WebRTC/STUN**: حذف فعال روت پیش‌فرض فیزیکی، رفع لوپ بریج هایپروایزر، جلوگیری از مسمومیت جدول مسیرها با `-PolicyStore ActiveStore`، بازنشانی COM در ICS و اتوماسیون پس‌زمینه با vmrun. |
 | **۱۵. تبلور و بازمهندسی ساختار ورک‌اسپیس** | `skill-15-workspace-crystallization-and-refactoring` | **چرخه دوفازی EFCL (کاوش در آغاز، ساختاردهی در پایان)**: اسکن دسته‌ای ارجاعات به‌جای خواندن ترتیبی، انکر پویای ریشه (`.project-root`) و سرایند متمرکز `# @PATH-REGISTRY`، شیم‌های فورواردر شفاف تک‌خطی بات و ممیزی زیر ۲ ثانیه سلامت CRLF و Zero-BOM. |
+
+---
+
+## ممیزی خودکار سلامت ورک‌اسپیس (Audit Tool)
+
+برای اطمینان از سلامت فنی فایل‌ها، انکودینگ و اجرای بی‌نقص در سیستم‌عامل ویندوز، یک ابزار ممیزی سریع بر اساس استاندارد **SKILL-15** تعبیه شده است:
+- **اجرای یک‌کلیکه در ویندوز:** کافی است روی فایل **`audit.bat`** دابل‌کلیک کنید.
+- **اجرا با پاورشل:**
+  ```powershell
+  .\tools\Invoke-WorkspaceAudit.ps1
+  ```
+- **عملکرد (زمان اجرا: زیر ۵۰۰ میلی‌ثانیه):**
+  1. تایید وجود انکر ریشه (`.project-root`) و فایل محافظتی `.gitattributes`.
+  2. بررسی بایت‌به‌بایت خطوط `CRLF` (`0D 0A`) و رد خطوط مخرب یونیکس (`LF`).
+  3. تایید نبود کاراکتر مخرب BOM در فایل‌های اجرایی و متنی.
+  4. تایید سلامت انکودینگ و نبود کاراکتر نال (`0x00`).
+  5. کنترل سقف ۲۴ کیلوبایتی فایل قانون تابلو (`AGENTS.md`).
+  6. ممیزی لکسر پرانتز در بچ‌اسکریپت‌ها جهت جلوگیری از کرش `cmd.exe`.
 
 ---
 
