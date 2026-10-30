@@ -42,7 +42,9 @@ Before processing, reasoning about, or responding to ANY user request, you **MUS
     ├── SKILL_10_DDC_CI_Display_Automation_and_Power_Safety.md # DDC/CI display control, I2C bus timing, WM_ENDSESSION & pre-login rescue task
     ├── SKILL_11_Windows_Desktop_Glassmorphism_and_Shell.md    # Windows Acrylic/Mica translucency vs browser swap chains & frameless shell
     ├── SKILL_12_Desktop_App_UI_UX_and_State_Discipline.md     # Desktop UI/UX ergonomics, RTL vs LTR controls, click-to-record & strict manual persistence
-    └── SKILL_13_Electron_Context_Isolation_and_Lexical_BiDi.md # Electron preload context isolation, Meta Lexical multi-paragraph BiDi, Shift+Enter hook & CDP
+    ├── SKILL_13_Electron_Context_Isolation_and_Lexical_BiDi.md # Electron preload context isolation, Meta Lexical multi-paragraph BiDi, Shift+Enter hook & CDP
+    ├── SKILL_14_VM_Gateway_VPN_and_Leak_Prevention.md         # VM-based transparent VPN gateway, WebRTC/STUN leak elimination, Hyper-V loop fix, ICS COM reset
+    └── SKILL_15_Workspace_Crystallization_and_Refactoring.md  # Post-project refactoring, folder taxonomy, .project-root anchor, # @PATH-REGISTRY, forwarder shims, CRLF/Zero-BOM audit
 ```
 
 ### 2.2. Linear Routing Graph (Task Intent -> Target File Address)
@@ -93,6 +95,12 @@ Before processing, reasoning about, or responding to ANY user request, you **MUS
    │
    ├─► [Patching Electron Preload Context Isolation, Meta Lexical BiDi, Shift+Enter, or CDP Debugging]
    │      └──► APPLY SKILL:    02_Skills\SKILL_13_Electron_Context_Isolation_and_Lexical_BiDi.md
+   │
+   ├─► [Routing Host OS via VM Gateway, Preventing WebRTC/STUN Leaks, Hypervisor Loops, or ICS Automation]
+   │      └──► APPLY SKILL:    02_Skills\SKILL_14_VM_Gateway_VPN_and_Leak_Prevention.md
+   │
+   ├─► [Finalizing/Organizing Messy Project, Folder Taxonomy, Re-wiring Paths, Shims, or Fast Workspace Audit]
+   │      └──► APPLY SKILL:    02_Skills\SKILL_15_Workspace_Crystallization_and_Refactoring.md
    │
    └─► [Command: "Update Signboard, Data, and Backup Files"]
           └──► EXECUTE:        01_Signboard_and_Policies\SYNC_AND_BACKUP_PROMPT.md
@@ -164,6 +172,8 @@ Use this table to route tasks directly to the appropriate Skill file in `<Antigr
 | **SKILL-11** | Creating frosted glass (glassmorphism), Windows Acrylic/Mica UIs, or wrapping web apps in frameless desktop shells | `SKILL_11_Windows_Desktop_Glassmorphism_and_Shell.md` | **Browser Opaque Swap Chain Trap**: Browser `--app` mode uses opaque swap chains and cannot blur desktop wallpaper; use native shell (Electron/WebView2) with `transparent: true` + `backgroundMaterial: 'acrylic'`; implement custom titlebar with `-webkit-app-region: drag` and `-webkit-app-region: no-drag` on interactive children; clean batch process orchestration. |
 | **SKILL-12** | Designing desktop UI/UX, handling Persian RTL vs LTR technical data, hotkey capsules, sliders, or persistence | `SKILL_12_Desktop_App_UI_UX_and_State_Discipline.md` | **Strict Manual Persistence Rule** (zero rogue auto-save; single commit point via header save), **Semantic RTL vs LTR Control Isolation** (inline row stability), **Click-to-Record Capsule Ergonomics** (auto-dismiss actions), **Dynamic Height Adaptivity** (`fit-content-height`), **Wheel Scrubbing & Dynamic Track Fill** (`--fill-pct`). |
 | **SKILL-13** | Patching Electron desktop apps, bridging `preload.js` context isolation, fixing Lexical/contenteditable BiDi, spacebar caret jumps, or Shift+Enter multi-paragraph splitting | `SKILL_13_Electron_Context_Isolation_and_Lexical_BiDi.md` | **Preload Context Isolation Barrier** (DOM elements in preload cannot access main-world JS properties like `el.__lexicalEditor`; must inject into main world via `webFrame.executeJavaScript`), **Lexical Multi-Paragraph Architecture** (intercept `INSERT_LINE_BREAK_COMMAND` at Priority 4 to dispatch `INSERT_PARAGRAPH_COMMAND`; eliminates spacebar caret jumping and forces independent line-by-line directionality), **Multiline Paste Splitting** (`PASTE_COMMAND`), **In-Memory ASAR Cache Trap** (Electron memory-maps headers; overwriting on-disk ASAR requires restart or live CDP injection), **Dynamic In-Place Patcher** (extract live ASAR, merge patches, repack without feature downgrade). |
+| **SKILL-14** | Routing Host OS via VM Gateway, preventing WebRTC/STUN leaks, Hypervisor bridge loops, or ICS reset | `SKILL_14_VM_Gateway_VPN_and_Leak_Prevention.md` | **Active Default-Route Removal** (kill-switch eliminating WebRTC leaks), **Hyper-V Bridge Pinning** (preventing NAT loop), **-PolicyStore ActiveStore** (zero persistence poisoning), **COM HNetShare Reset** (robust ICS re-binding), and **Headless Encrypted VM Automation** via vmrun (-vp, session 0 vs 1). |
+| **SKILL-15** | Finalizing or organizing a project, folder taxonomy cleanup, rewiring script/doc links, forwarder shims, or fast workspace audit | `SKILL_15_Workspace_Crystallization_and_Refactoring.md` | **Two-Phase Agentic Lifecycle (EFCL)**: Single-pass batch discovery over sequential reading; **Root Anchor Walk-Up (`.project-root`)** & `# @PATH-REGISTRY` header block; transparent 1-line `.bat` forwarder shims (`call "%~dp0core\..." %*`); pure CRLF/Zero-BOM binary hygiene & `< 2s` workspace audit (`Invoke-WorkspaceAudit.ps1`). |
 
 ---
 

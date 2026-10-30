@@ -5,7 +5,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Cross--Platform-lightgrey.svg)]()
 [![Persian Support](https://img.shields.io/badge/Persian%2FArabic-RTL%20Supported-success.svg)]()
 
-> **کیت ابزار مهندسی، قوانین پاسخ‌دهی بدون تعارف، و ۱۳ اسکیل تخصصی حل چالش‌های زبان فارسی و ویندوز برای Google Antigravity**  
+> **کیت ابزار مهندسی، قوانین پاسخ‌دهی بدون تعارف، و ۱۵ اسکیل تخصصی حل چالش‌های زبان فارسی و ویندوز برای Google Antigravity**  
 > *A production-grade developer kit for Google Antigravity featuring zero-preamble engineering response policies, RTL console formatting, zero-mojibake Office VBA macros, and Windows development standards.*
 
 ---
@@ -13,7 +13,7 @@
 ## فهرست مطالب (Table of Contents)
 - [چرا این کیت توسعه داده شد؟ (Motivation)](#چرا-این-کیت-توسعه-داده-شد-motivation)
 - [ویژگی‌های کلیدی (Key Features)](#ویژگیهای-کلیدی-key-features)
-- [فهرست اسکیل‌های ۱۳ گانه (The 13 Battle-Tested Skills)](#فهرست-اسکیلهای-۱۳-گانه-the-13-battle-tested-skills)
+- [فهرست اسکیل‌های ۱۵ گانه (The 15 Battle-Tested Skills)](#فهرست-اسکیلهای-۱۵-گانه-the-15-battle-tested-skills)
 - [راهنمای نصب سریع (Installation)](#راهنمای-نصب-سریع-installation)
 - [نحوه کارکرد فنی (Architecture)](#نحوه-کارکرد-فنی-architecture)
 - [مشارکت و لایسنس (License)](#مشارکت-و-لایسنس-license)
@@ -43,7 +43,7 @@
 
 ---
 
-## فهرست اسکیل‌های ۱۳ گانه (The 13 Battle-Tested Skills)
+## فهرست اسکیل‌های ۱۵ گانه (The 15 Battle-Tested Skills)
 
 | اسکیل | شناسه فنی | معضل حل‌شده |
 | :--- | :--- | :--- |
@@ -60,6 +60,8 @@
 | **۱۱. شیشه‌ای کردن پنجره‌های ویندوز (Acrylic/Mica)** | `skill-11-windows-desktop-glassmorphism-and-shell` | **تله پنجره‌های غیرشفاف مرورگر**: رفع ناتوانی مرورگر در بلور کردن پس‌زمینه دسکتاپ با شل نیتیو بدون فریم (Electron/WebView2)، ترنسپرنسی واقعی، تایتل‌بار درگ‌نیبل منهای المان‌های تعاملی و هماهنگی پروسه‌ها. |
 | **۱۲. اصول ارگونومی UI/UX و پایداری وضعیت** | `skill-12-desktop-app-ui-ux-and-state-discipline` | **قانون تعهد دستی به دیسک (Zero Auto-Save)**: جلوگیری از بازنویسی ناخواسته کانفیگ، تفکیک دایرکشن RTL فارسی از داده‌های فنی LTR در ردیف‌ها، کپسول‌های ثبت کلید میانبر و ارتفاع داینامیک پنجره. |
 | **۱۳. راست‌چین هوشمند و Context Isolation الکترون** | `skill-13-electron-context-isolation-and-lexical-bidi` | **عبور از سد Preload و تفکیک خط‌به‌خط ادیتور Lexical**: دسترسی به آبجکت ادیتور از طریق تزریق به Main World، رهگیری `INSERT_LINE_BREAK_COMMAND` برای ایجاد پاراگراف مجزا و حذف باگ پرش مکان‌نما در اسپیس و ادغام درون پکیج ASAR. |
+| **۱۴. گیت‌وی VPN مبتنی بر ماشین مجازی** | `skill-14-vm-gateway-vpn-and-leak-prevention` | **کیل‌سوئیچ قطعی و بستن نشت WebRTC/STUN**: حذف فعال روت پیش‌فرض فیزیکی، رفع لوپ بریج هایپروایزر، جلوگیری از مسمومیت جدول مسیرها با `-PolicyStore ActiveStore`، بازنشانی COM در ICS و اتوماسیون پس‌زمینه با vmrun. |
+| **۱۵. تبلور و بازمهندسی ساختار ورک‌اسپیس** | `skill-15-workspace-crystallization-and-refactoring` | **چرخه دوفازی EFCL (کاوش در آغاز، ساختاردهی در پایان)**: اسکن دسته‌ای ارجاعات به‌جای خواندن ترتیبی، انکر پویای ریشه (`.project-root`) و سرایند متمرکز `# @PATH-REGISTRY`، شیم‌های فورواردر شفاف تک‌خطی بات و ممیزی زیر ۲ ثانیه سلامت CRLF و Zero-BOM. |
 
 ---
 
@@ -72,7 +74,7 @@
    ```
 2. وارد پوشه شده و روی فایل **`install.bat`** دابل‌کلیک کنید.  
    *(اسکریپت به صورت خودکار پوشه پلاگین را در `~/.gemini/config/plugins/` مستقر و در تنظیمات آنتی‌گرویتی ثبت می‌کند).*
-3. برنامه Antigravity را باز کنید؛ تمام ۱۳ اسکیل و قوانین فعال هستند!
+3. برنامه Antigravity را باز کنید؛ تمام ۱۵ اسکیل و قوانین فعال هستند!
 
 ### روش ۲: نصب با پاورشل (PowerShell)
 ```powershell

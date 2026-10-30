@@ -9,7 +9,7 @@
 ## 1. Project Purpose
 This repository provides a modular, zero-token-overhead plugin for Google Antigravity tailored for Persian-speaking developers and Windows environments. It bundles:
 1. **Always-on Response Policy & Signboard (`plugin/rules/AGENTS.md`)**: Enforces zero-preamble, causal explanations, epistemic discipline, and the mandatory `AGENT_GUIDE.md` rule.
-2. **13 Specialized On-Demand Skills (`plugin/skills/<skill-name>/SKILL.md`)**: Progressive disclosure skills loaded only when triggered by relevant tasks.
+2. **15 Specialized On-Demand Skills (`plugin/skills/<skill-name>/SKILL.md`)**: Progressive disclosure skills loaded only when triggered by relevant tasks.
 
 ---
 
@@ -19,7 +19,7 @@ antigravity-persian-devkit/
 ├── plugin/                                  # Pure deployable Antigravity plugin
 │   ├── plugin.json                          # Plugin metadata
 │   ├── rules/AGENTS.md                      # Always-on rule (<24KB cap)
-│   └── skills/                              # 13 on-demand skills with YAML frontmatter
+│   └── skills/                              # 15 on-demand skills with YAML frontmatter
 ├── install.bat                              # 1-Click Windows installer (CRLF, UTF-8 no BOM)
 ├── install.ps1                              # PowerShell installer
 ├── uninstall.bat                            # Uninstaller
