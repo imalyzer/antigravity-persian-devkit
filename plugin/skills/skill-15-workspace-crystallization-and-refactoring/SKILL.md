@@ -216,6 +216,25 @@ $safe = ("{0}:{1}" -f $relSource, $lineNum)
 $safe = "$($relSource):$lineNum"
 ```
 
+### C. The Batch Parenthesis Lexer Crash (`cmd.exe`)
+In `cmd.exe`, parenthesized blocks `if (...) (` and `for (...) do (` are parsed at the lexer level before runtime evaluation:
+* **The Crash:** Any literal `)` inside the block (e.g., `echo Please install Node.js (https://nodejs.org) or run 1_Apply_Patch.bat`) closes the block prematurely. The remainder of the line is executed as an invalid command, crashing with `<keyword> was unexpected at this time.`
+* **The Rule:** NEVER write unescaped parentheses inside blocks. Use square brackets: `[y/n]` instead of `(y/n)` and bare URLs `https://...` without parentheses, or strictly escape with carets `^(` and `^)`.
+
+### D. The GitHub ZIP Download LF Normalization Trap (`.gitattributes`)
+When a repository is downloaded via GitHub's "Download ZIP" button, GitHub's Linux archive exporter normalizes text files to Linux `LF` (`\n`).
+* **The Crash:** In Windows, executing an `LF`-only batch file with `goto` or loops (e.g., `:FindRootLoop`) causes byte-offset shifts, resulting in labels not found or silent window closure.
+* **The Rule:** EVERY repository with Windows scripts MUST include a root `.gitattributes`:
+  ```gitattributes
+  * text=auto
+  *.bat text eol=crlf
+  *.cmd text eol=crlf
+  *.ps1 text eol=crlf
+  ```
+
+### E. Non-Interactive CLI Execution (`npx --yes`)
+In scripts or child processes (`execSync`), running `npx <package>` without `--yes` causes the process to hang waiting for user confirmation `Ok to proceed? (y)`. Always pass `npx --yes <package>`.
+
 ---
 
 ## 7. Fast Workspace Audit Tool Specification (`Invoke-WorkspaceAudit.ps1`)

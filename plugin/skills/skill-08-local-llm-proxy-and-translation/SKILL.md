@@ -5,7 +5,7 @@ description: Hard-won technical configurations for LM Studio parameters (Gemma),
 
 # SKILL 08: Local LLMs, API Proxies, Offline Translation & Persian Transcription
 
-> **File Path:** `skills/SKILL_08_Local_LLM_Proxy_and_Translation.md`  
+> **File Path:** `02_Skills/SKILL_08_Local_LLM_Proxy_and_Translation.md`  
 > **Trigger:** Whenever configuring LM Studio parameters, working on the QTranslate offline pipeline, editing Kotlin/Gradle plugins, configuring LiteLLM / 9Router / Free Claude Code, or working on the Persian transcription tool.  
 > **Source:** `claude-memory-2026-10-23` (`projects\Qtranslate\*`, `areas\litellm-proxy.md`, `areas\persian-transcription-skill.md`, `topics\tools.md`).
 

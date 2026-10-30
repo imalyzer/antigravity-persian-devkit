@@ -294,7 +294,7 @@ Instead of distributing static binary archives, distribute a dynamic Node.js eng
 4. **Live Extraction:** Extract the vendor's newly installed `app.asar` via `npx asar extract`.
 5. **Discrete AST / Regex Patching:**
    * Append self-contained `bidi_engine.js` to `dist/preload.js` (with idempotency guards to replace existing patch blocks if present).
-   * Enable `devTools: true` in `dist/utils.js`.
+   * Enable `devTools: true` across all versions: patch `dist/debugConsole.js` (`isDebugConsoleEnabled() -> true`) in newer releases and `dist/utils.js` (`devTools: true`) in legacy/direct releases.
    * Preserve DevTools menu items in `dist/menu.js`.
 6. **Repack & In-Place Swap:** Repack with `--unpack-dir` flags and atomically replace `resources\app.asar`.
 Result: 100% of vendor update features are preserved while custom patches are seamlessly merged.

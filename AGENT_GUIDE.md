@@ -16,6 +16,7 @@ This repository provides a modular, zero-token-overhead plugin for Google Antigr
 ## 2. Directory Architecture
 ```text
 antigravity-persian-devkit/
+├── .gitattributes                           # Forces CRLF for Windows scripts in GitHub ZIP downloads
 ├── plugin/                                  # Pure deployable Antigravity plugin
 │   ├── plugin.json                          # Plugin metadata
 │   ├── rules/AGENTS.md                      # Always-on rule (<24KB cap)

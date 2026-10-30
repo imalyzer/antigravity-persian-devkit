@@ -1,7 +1,7 @@
 @echo off
 chcp 65001 >nul
 set "PYTHONUTF8=1"
-setlocal enabledelayedexpansion
+setlocal
 
 title Antigravity Persian DevKit Installer
 
@@ -54,7 +54,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
 echo.
 echo ============================================================
 echo   [SUCCESS] Antigravity Persian DevKit installed successfully!
-echo   All 8 skills and rules are now available in your Antigravity IDE.
+echo   All 15 skills and rules are now available in your Antigravity IDE.
 echo ============================================================
 echo.
 pause
