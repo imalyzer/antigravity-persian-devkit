@@ -5,7 +5,7 @@ description: Mandatory encoding, CRLF line-ending, UTF-8 codepage, block-variabl
 
 # SKILL 03: Windows Batch & Script Encoding Guidelines (.bat, .cmd, .ps1)
 
-> **File Path:** 02_Skills/SKILL_03_Windows_Batch_and_CRLF_Encoding.md  
+> **File Path:** D:\Projects\Iman Sheybani\software\Antigravity\02_Skills\SKILL_03_Windows_Batch_and_CRLF_Encoding.md  
 > **Trigger:** Whenever creating, editing, or debugging any `.bat`, `.cmd`, or `.ps1` file intended to run on Windows, or preparing Windows scripts for distribution via Git/GitHub.  
 > **Source:** `windows-batch-crlf-guidelines.md` and Project Technical Architecture Guidelines.
 

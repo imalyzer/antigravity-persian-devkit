@@ -5,7 +5,7 @@ description: DDC/CI hardware display control, I2C bus timing debouncing, Windows
 
 # SKILL 10: DDC/CI Display Automation, I2C Bus Timing & OS Power State Safety
 
-> **File Path:** `02_Skills/SKILL_10_DDC_CI_Display_Automation_and_Power_Safety.md`  
+> **File Path:** `D:\Projects\Iman Sheybani\software\Antigravity\02_Skills\SKILL_10_DDC_CI_Display_Automation_and_Power_Safety.md`  
 > **Trigger:** Whenever automating physical monitors via software/DDC/CI, controlling brightness/contrast/power via VCP, preventing monitor sleep during video/audio without fragile title matching, or solving dark screens on reboot/crash.  
 > **Source:** `Monitor Controller` Production Engineering & Architecture.
 

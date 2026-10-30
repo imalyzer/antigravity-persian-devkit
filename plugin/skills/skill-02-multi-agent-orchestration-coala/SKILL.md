@@ -5,7 +5,7 @@ description: Three-stage AI development pipeline (Model 1 Architect, Model 2 Exe
 
 # SKILL 02: Multi-Agent Development Pipeline & Orchestration (CoALA Framework)
 
-> **File Path:** `02_Skills/SKILL_02_Multi_Agent_Orchestration_CoALA.md`  
+> **File Path:** `D:\Projects\Iman Sheybani\software\Antigravity\02_Skills\SKILL_02_Multi_Agent_Orchestration_CoALA.md`  
 > **Trigger:** When maturing raw software ideas (Model 1 Architect), decomposing complex architectures into multi-model execution plans (Model 2 Orchestrator), or assigning tasks across AI models (Cursor, Claude, Local LLMs).  
 > **Sources:** `Development Team\Model 1 - Architect\*` and `Development Team\Model 2 - Execution Orchestrator\*`.
 

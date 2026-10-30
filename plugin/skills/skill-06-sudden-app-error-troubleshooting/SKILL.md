@@ -5,7 +5,7 @@ description: Seven-step root-cause diagnostic and ranking protocol when a previo
 
 # SKILL 06: Diagnostic Protocol for Sudden & Unprecedented Application Errors
 
-> **File Path:** `02_Skills/SKILL_06_Sudden_App_Error_Troubleshooting.md`  
+> **File Path:** `D:\Projects\Iman Sheybani\software\Antigravity\02_Skills\SKILL_06_Sudden_App_Error_Troubleshooting.md`  
 > **Trigger:** Whenever the user sends an error message, stacktrace, or screenshot from an application and explains that the software worked fine until recently (e.g., "worked yesterday, broke today without obvious reason").  
 > **Source:** `سیستم پرامت هنگام مشاهده ارور های بی‌سابقه و نگهانی از اپ ها.md`.
 

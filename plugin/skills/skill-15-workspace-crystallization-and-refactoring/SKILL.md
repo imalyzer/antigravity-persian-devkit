@@ -5,7 +5,7 @@ description: Post-project structural refactoring, folder taxonomy organization, 
 
 # SKILL 15: Workspace Crystallization, Taxonomy Organization & Resilient Addressing
 
-> **File Path:** `02_Skills/SKILL_15_Workspace_Crystallization_and_Refactoring.md`  
+> **File Path:** `D:\Projects\Iman Sheybani\software\Antigravity\02_Skills\SKILL_15_Workspace_Crystallization_and_Refactoring.md`  
 > **Trigger:** Whenever finalizing, organizing, categorizing, or refactoring an ad-hoc, cluttered, or completed project workspace (e.g., "پروژه را مرتب کن", "پروژه را نهایی کن", "داده‌های پروژه را سر و سامان بده"), reorganizing folder taxonomies, rewiring cross-file script/document paths without breaking existing links, injecting transparent forwarder shims, or verifying CRLF/Zero-BOM script hygiene and path integrity via fast automated audit.  
 > **Source:** `VPN VMware` Workspace Re-engineering & `A-W-G-A-R` (Agentic Workspace Governance & Refactoring Kit).
 

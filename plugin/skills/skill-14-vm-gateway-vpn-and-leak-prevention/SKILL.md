@@ -5,7 +5,7 @@ description: VM-based transparent VPN gateway routing, physical adapter bridging
 
 # SKILL 14: VM Gateway VPN Routing, WebRTC/STUN Leak Prevention & Hypervisor Isolation
 
-> **File Path:** `02_Skills/SKILL_14_VM_Gateway_VPN_and_Leak_Prevention.md`  
+> **File Path:** `D:\Projects\Iman Sheybani\software\Antigravity\02_Skills\SKILL_14_VM_Gateway_VPN_and_Leak_Prevention.md`  
 > **Trigger:** Whenever routing a host OS transparently through a VPN running inside a virtual machine (VMware/VirtualBox/Hyper-V), preventing WebRTC/STUN IP leaks, resolving hypervisor bridge loops (Hyper-V Default Switch conflicts), automating Windows Internet Connection Sharing (ICS), hardening Windows routing table persistence (`-PolicyStore ActiveStore`), or orchestrating headless encrypted VMs via `vmrun`.  
 > **Source:** `VPN VMware` Host-to-VM Gateway Engineering & Leak-Proof Architecture.
 

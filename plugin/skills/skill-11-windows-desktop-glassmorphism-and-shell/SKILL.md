@@ -5,7 +5,7 @@ description: True Windows 11 Acrylic & Mica desktop translucency vs opaque brows
 
 # SKILL 11: Windows Desktop Glassmorphism, Native Translucency & Frameless Shell Architecture
 
-> **File Path:** `02_Skills/SKILL_11_Windows_Desktop_Glassmorphism_and_Shell.md`  
+> **File Path:** `D:\Projects\Iman Sheybani\software\Antigravity\02_Skills\SKILL_11_Windows_Desktop_Glassmorphism_and_Shell.md`  
 > **Trigger:** Whenever building a modern frosted glass (glassmorphism), Acrylic, or Mica UI on Windows, wrapping web dashboards into native desktop apps, or troubleshooting opaque browser windows (`--app` mode).  
 > **Source:** `Monitor Controller` Production Engineering & Architecture.
 

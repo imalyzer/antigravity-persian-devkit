@@ -5,7 +5,7 @@ description: Tested method for rendering connected, properly ordered Persian/Ara
 
 # SKILL 04: Displaying Persian / RTL Text in Windows Terminal & Console Apps
 
-> **File Path:** `02_Skills/SKILL_04_Windows_Terminal_Persian_RTL.md`  
+> **File Path:** `D:\Projects\Iman Sheybani\software\Antigravity\02_Skills\SKILL_04_Windows_Terminal_Persian_RTL.md`  
 > **Trigger:** Whenever building a CLI tool, terminal UI, progress logger, Windows batch launcher, or console script that outputs Persian or Arabic (RTL) text.  
 > **Source:** `سیستم پرامپت هدایت فنی پروژه.md` (§5) & Monitor Controller Production Debugging.
 

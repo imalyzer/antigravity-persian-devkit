@@ -5,7 +5,7 @@ description: Hard-won technical configurations for LM Studio parameters (Gemma),
 
 # SKILL 08: Local LLMs, API Proxies, Offline Translation & Persian Transcription
 
-> **File Path:** `02_Skills/SKILL_08_Local_LLM_Proxy_and_Translation.md`  
+> **File Path:** `D:\Projects\Iman Sheybani\software\Antigravity\02_Skills\SKILL_08_Local_LLM_Proxy_and_Translation.md`  
 > **Trigger:** Whenever configuring LM Studio parameters, working on the QTranslate offline pipeline, editing Kotlin/Gradle plugins, configuring LiteLLM / 9Router / Free Claude Code, or working on the Persian transcription tool.  
 > **Source:** `claude-memory-2026-10-23` (`projects\Qtranslate\*`, `areas\litellm-proxy.md`, `areas\persian-transcription-skill.md`, `topics\tools.md`).
 
@@ -37,7 +37,7 @@ description: Hard-won technical configurations for LM Studio parameters (Gemma),
 
 ## 3. API Proxy Infrastructure (LiteLLM / 9Router / Free Claude Code)
 
-1. **Minimal Proxy Hops:** Keep the local proxy chain between client tools (`Cursor`, `Claude Desktop`, `Free Claude Code` at `<Free-Claude-Code-Dir>`) and `9Router` (`localhost:20128`) or `LiteLLM` (WSL2/Ubuntu) as short and direct as possible—no redundant proxy layers.
+1. **Minimal Proxy Hops:** Keep the local proxy chain between client tools (`Cursor`, `Claude Desktop`, `Free Claude Code` at `D:\Projects\Iman Sheybani\software\free_claude_code`) and `9Router` (`localhost:20128`) or `LiteLLM` (WSL2/Ubuntu) as short and direct as possible—no redundant proxy layers.
 2. **Claude Desktop Model-Name Quirk:** When routing custom/free-tier endpoints to Claude Desktop via LiteLLM, `model_name` must resemble an Anthropic model identifier (e.g., `claude-opus-5`) to avoid client-side rejection.
 3. **Gemini API Quota Reality:** Rate limits apply **per Google Cloud Project**, not per API key. Combining multiple keys only scales quota when each key belongs to a separate Google Cloud Project.
 4. **Cursor Free Plan BYOK Caveat:** Account-wide quota pauses on Cursor's Free tier cannot be bypassed simply by entering a BYOK key.

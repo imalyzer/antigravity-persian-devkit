@@ -5,7 +5,7 @@ description: Ergonomic UI/UX standards, Persian RTL vs LTR data isolation, click
 
 # SKILL 12: Desktop App UI/UX Ergonomics, RTL Discipline & State Persistence Architecture
 
-> **File Path:** `02_Skills/SKILL_12_Desktop_App_UI_UX_and_State_Discipline.md`  
+> **File Path:** `D:\Projects\Iman Sheybani\software\Antigravity\02_Skills\SKILL_12_Desktop_App_UI_UX_and_State_Discipline.md`  
 > **Trigger:** Whenever designing, refining, or debugging desktop app GUIs (Electron, Tauri, WebView2), handling Persian/Arabic RTL vs LTR technical data, creating interactive hotkey/slider controls, or preventing accidental settings overwrites and window dead space.  
 > **Source:** `Monitor Controller` Production Engineering & UI/UX Maturation.
 

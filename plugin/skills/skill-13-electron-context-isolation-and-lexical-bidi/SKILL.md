@@ -5,7 +5,7 @@ description: Electron preload context isolation barrier bypass, Meta Lexical mul
 
 # SKILL 13: Electron Context Isolation, Lexical Multi-Paragraph BiDi & Hot-Patching
 
-> **File Path:** `02_Skills/SKILL_13_Electron_Context_Isolation_and_Lexical_BiDi.md`  
+> **File Path:** `D:\Projects\Iman Sheybani\software\Antigravity\02_Skills\SKILL_13_Electron_Context_Isolation_and_Lexical_BiDi.md`  
 > **Trigger:** Whenever patching or extending Electron desktop applications, dealing with `preload.js` vs Main World DOM property barriers (`contextIsolation: true`), fixing BiDi / RTL mixed-direction editing in Meta Lexical or contenteditable rich text editors, preventing cursor/caret jumping on spacebar, or inspecting running apps via Chrome DevTools Protocol (CDP).  
 > **Source:** `Antigravity UI` Smart BiDi & Lexical Architecture Engineering.
 

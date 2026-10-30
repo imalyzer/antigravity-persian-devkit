@@ -5,7 +5,7 @@ description: Mandatory rules for writing, editing, and debugging Microsoft Offic
 
 # SKILL 05: Office VBA Macro Guidelines for Persian / RTL Users
 
-> **File Path:** `02_Skills/SKILL_05_VBA_Persian_Macro_Guidelines.md`  
+> **File Path:** `D:\Projects\Iman Sheybani\software\Antigravity\02_Skills\SKILL_05_VBA_Persian_Macro_Guidelines.md`  
 > **Trigger:** Whenever writing, modifying, or debugging any VBA macro (`.bas`, `.vba`, Word, Excel, Access, PowerPoint) involving Persian/Arabic text, RTL layout, or Persian fonts.  
 > **Source:** `vba-persian-macro-guidelines.md`.
 

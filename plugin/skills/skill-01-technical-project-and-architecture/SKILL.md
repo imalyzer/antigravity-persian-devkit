@@ -5,7 +5,7 @@ description: Technical project guidance, Specialist Swamp Filter (90% simple sol
 
 # SKILL 01: Technical Project Guidance & Architecture Framework
 
-> **File Path:** `02_Skills/SKILL_01_Technical_Project_and_Architecture.md`  
+> **File Path:** `D:\Projects\Iman Sheybani\software\Antigravity\02_Skills\SKILL_01_Technical_Project_and_Architecture.md`  
 > **Trigger:** Whenever guiding a software project, evaluating a technical architecture, or handling a multi-interpretation technical request.  
 > **Sources:** `سیستم پرامپت هدایت فنی پروژه.md`, `technical-request-framework.md`, and `Model 1 - Architect` (`3- skill-technical-judgment.md`, `5- skill-architecture-generation.md`).
 

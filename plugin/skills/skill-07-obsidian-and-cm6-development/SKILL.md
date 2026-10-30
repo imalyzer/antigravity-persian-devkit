@@ -5,7 +5,7 @@ description: Technical rules and architectural learnings for Obsidian theme deve
 
 # SKILL 07: Obsidian Theme, Plugin & CodeMirror 6 (CM6) Development Guidelines
 
-> **File Path:** `02_Skills/SKILL_07_Obsidian_and_CM6_Development.md`  
+> **File Path:** `D:\Projects\Iman Sheybani\software\Antigravity\02_Skills\SKILL_07_Obsidian_and_CM6_Development.md`  
 > **Trigger:** Whenever working on the user's bilingual (Persian RTL + English LTR) Obsidian vault, custom themes, CSS snippets, JS Engine scripts, or TypeScript Obsidian plugins.  
 > **Source:** `claude-memory-2026-10-23\projects\Obsidian\learnings-and-approach.md` and `overview.md`.
 
