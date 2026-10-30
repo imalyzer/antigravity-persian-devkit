@@ -2,19 +2,26 @@
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $ErrorActionPreference = "Stop"
 
+# @PATH-REGISTRY-START
+$curr = if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path }
+while ($curr -and -not (Test-Path (Join-Path $curr ".project-root"))) {
+    $curr = Split-Path $curr -Parent
+}
+$ProjectRoot = if ($curr) { $curr } else { if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path } }
+
+$PluginSrc   = Join-Path $ProjectRoot "plugin"
+$TargetDir   = Join-Path $HOME ".gemini\config\plugins\antigravity-persian-devkit"
+$ConfigJson  = Join-Path $HOME ".gemini\config\config.json"
+# @PATH-REGISTRY-END
+
 Write-Host "============================================================" -ForegroundColor Cyan
 Write-Host "  Antigravity Persian DevKit - Installer" -ForegroundColor Cyan
 Write-Host "  Repository: github.com/imalyzer/antigravity-persian-devkit" -ForegroundColor Cyan
 Write-Host "============================================================" -ForegroundColor Cyan
 Write-Host ""
 
-$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$PluginSrc = Join-Path $ScriptDir "plugin"
-$TargetDir = Join-Path $HOME ".gemini\config\plugins\antigravity-persian-devkit"
-$ConfigJson = Join-Path $HOME ".gemini\config\config.json"
-
 if (-not (Test-Path (Join-Path $PluginSrc "plugin.json"))) {
-    Write-Host "[ERROR] plugin folder not found!" -ForegroundColor Red
+    Write-Host "[ERROR] plugin folder not found at: $PluginSrc" -ForegroundColor Red
     exit 1
 }
 
@@ -44,4 +51,5 @@ if (Test-Path $ConfigJson) {
 Write-Host ""
 Write-Host "============================================================" -ForegroundColor Green
 Write-Host "  [SUCCESS] Antigravity Persian DevKit installed successfully!" -ForegroundColor Green
+Write-Host "  All 15 skills and rules are now available in your Antigravity IDE." -ForegroundColor Green
 Write-Host "============================================================" -ForegroundColor Green

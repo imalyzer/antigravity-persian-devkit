@@ -2,15 +2,17 @@
 chcp 65001 >nul
 setlocal
 
+:: @PATH-REGISTRY-START
+set "TARGET_DIR=%USERPROFILE%\.gemini\config\plugins\antigravity-persian-devkit"
+set "CONFIG_JSON=%USERPROFILE%\.gemini\config\config.json"
+:: @PATH-REGISTRY-END
+
 title Antigravity Persian DevKit Uninstaller
 
 echo ============================================================
 echo   Antigravity Persian DevKit - Uninstaller
 echo ============================================================
 echo.
-
-set "TARGET_DIR=%USERPROFILE%\.gemini\config\plugins\antigravity-persian-devkit"
-set "CONFIG_JSON=%USERPROFILE%\.gemini\config\config.json"
 
 if exist "%TARGET_DIR%" (
     echo Removing plugin directory: %TARGET_DIR% ...
@@ -32,6 +34,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
     "}"
 
 echo.
-echo Uninstallation completed.
+echo ============================================================
+echo   [SUCCESS] Uninstallation completed.
+echo ============================================================
+echo.
 pause
 exit /b 0
